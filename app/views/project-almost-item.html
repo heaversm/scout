@@ -1,0 +1,56 @@
+<div id="content">
+    <div class="content-holder">
+        <div class="content-frame">
+            <section class="carousel">
+                <div class="mask">
+                    <div class="slideset">
+                        <div class="slide">
+                            ${hero}<br/><br/>
+                            ${slide}
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <a class="btn-prev" href="${previous_project}">Previous</a>
+                    <a class="btn-next" href="${next_project}">Next</a>
+                </div>
+            <div class="panel">
+                <h2>${client_name}</h2>
+                <strong class="text">${name}</strong>
+            </div>
+
+            <ul class="accordion">
+                <li id="description-slide-parent">
+                    <div class="slide description-wrap" id="description-slide">
+                        <em>${description}</em>
+                    </div>
+                </li>
+                <li  id="credits-slide-parent">
+                    <header class="head-area">
+                        <div class="title-area">
+                            <h2>Credits</h2>
+                        </div>
+                        <div class="meta">
+                            <a href="#" class="opener" rel="credits-slide">open</a>
+                        </div>
+                    </header>
+                    <div class="slide hide credits-section" id="credits-slide">
+                        ${credits}
+                    </div>
+                </li>
+            </ul>
+            <section class="gallery-area ${hide_images_01}">
+                <h2>Design 01</h2>
+                <ul>
+                    ${still_images}
+                </ul>
+            </section>
+            <section class="gallery-area ${hide_images_02}">
+                <h2>Design 02</h2>
+                <ul>
+                    ${process_images}
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>

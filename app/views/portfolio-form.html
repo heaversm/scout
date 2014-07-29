@@ -1,0 +1,152 @@
+<div id="content">
+    <div class="content-holder">
+        <h1>${form_title}</h1>
+        <form class="standard" enctype="multipart/form-data" method="post" action="${form_action}">
+            ${form.response}
+            ${form.keys}
+            <div class="field-group single">
+                <div class="label">
+                    <span>Project Name</span>
+                </div>
+                <div class="field">
+                    ${form.name}
+                </div>
+                <div class="label">
+                    <span>Client Name</span>
+                </div>
+                <div class="field">
+                    ${form.client_name}
+                </div>
+                <div class="label">
+                    <span>Vimeo URL</span>
+                </div>
+                <div class="field">
+                    ${form.vimeo_url}
+                </div>
+                <div class="label">
+                    <span>Cover Image</span>
+                </div>
+                <div class="field">
+                    ${form.cover_fileid}
+                </div>
+                <div class="label">
+                    <span>Hero Image</span>
+                </div>
+                <div class="field">
+                    ${form.hero_fileid}
+                    ${remove_hero}
+                </div>
+                <div class="assets-list clearfix">
+                    <div class="asset-group">
+                        <div class="label">
+                            <span>Credits</span>
+                        </div>
+                        <table id="credit-sortable">
+                            <tbody>
+                            ${current_credit_table_row}
+                            </tbody>
+                        </table>
+                        <table>
+                            ${new_credit_table_row}
+                        </table>
+                    </div>
+                    <div class="asset-group">
+                        <div class="label">
+                            <span>Stills</span>
+                        </div>
+                        <table id="still-sortable">
+                            <tbody>
+                            ${current_still_table_row}
+                            </tbody>
+                        </table>
+                        <table>
+                        ${new_still_table_row}
+                        </table>
+                    </div>
+                    <div class="asset-group">
+                        <div class="label">
+                            <span>Process</span>
+                        </div>
+                        <table id="process-sortable">
+                            <tbody>
+                            ${current_process_table_row}
+                            </tbody>
+                        </table>
+                        <table>
+                            ${new_process_table_row}
+                        </table>
+                    </div>
+                </div>
+                <div class="label">
+                    <span>Video Embed 1</span>
+                </div>
+                <div class="field video-embed">
+                    ${form.video_embed1}
+                </div>
+                <div class="label">
+                    <span>Video Embed 2</span>
+                </div>
+                <div class="field video-embed">
+                    ${form.video_embed2}
+                </div>
+                <div class="label">
+                    <span>Video Embed 3</span>
+                </div>
+                <div class="field video-embed">
+                    ${form.video_embed3}
+                </div>
+                <div class="label">
+                    <span>Video Embed 4</span>
+                </div>
+                <div class="field video-embed">
+                    ${form.video_embed4}
+                </div>
+                <div class="label">
+                    <span>Video Embed 5</span>
+                </div>
+                <div class="field video-embed">
+                    ${form.video_embed5}
+                </div>
+                <div class="label">
+                    <span>Video Embed 6</span>
+                </div>
+                <div class="field video-embed">
+                    ${form.video_embed6}
+                </div>
+                <div class="label">
+                    <span>Video Embed 7</span>
+                </div>
+                <div class="field video-embed">
+                    ${form.video_embed7}
+                </div>
+                <div class="label">
+                    <span>Video Embed 8</span>
+                </div>
+                <div class="field video-embed">
+                    ${form.video_embed8}
+                </div>
+                <div class="label">
+                    <span>Video Embed 9</span>
+                </div>
+                <div class="field video-embed">
+                    ${form.video_embed9}
+                </div>
+                <div class="label">
+                    <span>Video Embed 10</span>
+                </div>
+                <div class="field video-embed">
+                    ${form.video_embed10}
+                </div>
+                <div class="label">
+                    <span>Description</span>
+                </div>
+                <div class="field">
+                    ${form.description}
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="${form_button}" class="save" />
+            </div>
+        </form>
+    </div>
+</div>

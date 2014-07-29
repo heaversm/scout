@@ -1,0 +1,20 @@
+Header append P3P "CP=\"HONK\""
+
+RewriteEngine On
+
+RewriteBase /
+RewriteRule ^static/[\.0-9]+/images/(.+)$ static/images/$1 [L,NC]
+RewriteRule ^static/[\.0-9]+/css/(.+)$ static/css/$1 [L,NC]
+RewriteRule ^static/[\.0-9]+/js/(.+)$ static/js/$1 [L,NC]
+RewriteRule ^static/[\.0-9]+/fonts/(.+)$ static/fonts/$1 [L,NC]
+RewriteRule ^static/[\.0-9]+/assets/(.+)$ static/assets/$1 [L,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/([^/]+)(/.*)?$ index.php?action=$1&method=$2&path=$3 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ index.php?action=$1&method=default [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ index.php?action=default&method=default [QSA,L]

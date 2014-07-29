@@ -1,0 +1,27 @@
+<div id="content">
+    <div class="content-holder">
+        <h1>${form_title}</h1>
+        <form class="standard" method="post" action="${form_action}">
+            ${form.response}
+            ${form.keys}
+            <div class="field-group single">
+                <div class="label">
+                    <span>Title</span>
+                </div>
+                <div class="field">
+                    ${form.title}
+                </div>
+                <div class="label">
+                    <span>Embed Code</span>
+                </div>
+                <div class="field">
+                    ${form.embed_code}
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="${form_button}" class="save" />
+                <input type="button" value="Cancel" class="cancel" onclick="javascript: history.go(-1); return false;"/>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>${title}</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="content-style-type" content="text/css" />
+	<meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="${web_name}" />
+	<meta name="copyright" content="${copyright_year}" />
+	<meta name="description" content="${meta_description}" />
+	<meta name="keywords" content="${meta_keywords}" />
+	<meta name="developer" content="${developer}" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<link rel="shortcut icon" type="image/x-icon" href="${favicon_url}" />
+    <script type="text/javascript" src="//use.typekit.net/eck2hiy.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	${css_tag}
+	<script type="text/javascript">
+	//<![CDATA[
+		if(!window.App){
+			window.App = {};
+		}
+		App.Config = ${config_flags};
+	//]]>
+	</script>
+</head>
+<body class="${body_css} ${body_class}">

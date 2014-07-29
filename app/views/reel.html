@@ -1,0 +1,28 @@
+<div id="content">
+    <img class="home-image" src="${image}" />
+</div>
+<script>
+window.onload = function(){
+
+    $('.home-image').fadeTo(500,1);
+
+    setTimeout(function(){
+        $('.home-image').fadeTo(500,0,function(){
+            location.reload();
+            //loadNewImage();
+        });
+
+    },5000)
+}
+
+loadNewImage = function(){
+        $.ajax({ url: '/app/library/Controller/Reel.php',
+             data: {action: 'test'},
+             type: 'post',
+             success: function(output) {
+             alert(output);
+         }
+    });
+}
+
+</script>
